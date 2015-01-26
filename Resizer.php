@@ -3,6 +3,8 @@
 
 class Resizer {
 
+    private $path;
+
     public function __construct($path, $configuration=null) {
         if ($configuration == null) $configuration = new Configuration();
         $this->checkPath($path);
