@@ -11,8 +11,7 @@ function resize($imagePath,$opts=null){
 	$configuration = new Configuration($opts);
 
 	$opts = $configuration->asHash();
-
-	$purl = parse_url($imagePath);
+	
 	$finfo = pathinfo($imagePath);
 	$ext = $finfo['extension'];
 
