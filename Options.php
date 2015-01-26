@@ -42,7 +42,7 @@ class Options {
     private function sanitize($opts) {
         $result = array();
 
-        if($opts != null) {
+        if($opts == null) {
             $result = $opts;
         }
 
