@@ -14,14 +14,12 @@ function resize($imagePath,$opts=null){
 
 	$configuration = new Configuration($opts);
 	$resizer = new Resizer($path, $configuration);
-	
+
 	$opts = $configuration->asHash();
 
 	$finfo = pathinfo($imagePath);
 	$ext = $finfo['extension'];
-
-
-
+	
 	if($path->isHttpProtocol()):
 		$filename = $path->obtainFileName();
 		$local_filepath = $configuration->obtainRemote() .$filename;
