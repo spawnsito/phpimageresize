@@ -31,7 +31,8 @@ class ResizerTest extends PHPUnit_Framework_TestCase {
 
         $stub = $this->getMockBuilder('FileSystem')
             ->getMock();
-        
+        $stub->method('file_')
+            ->willReturn('foo');
 
         $this->assertEquals('blabla', $resizer->obtainFilePath());
 
