@@ -4,7 +4,7 @@
 class Resizer {
 
     public function __construct($path, $configuration=null) {
-        if (!($path instanceof ImagePath)) throw new InvalidArgumentException();
+        $this->checkPath($path);
         if ($configuration == null)
             $configuration = new Configuration();
         if (!($configuration instanceof Configuration)) throw new InvalidArgumentException();
