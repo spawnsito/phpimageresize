@@ -22,7 +22,6 @@ class Options {
             'cache_http_minutes' => 20);
 
         $this->opts = array_merge($defaults, $sanitized);
-
     }
 
     public function asHash() {

@@ -48,8 +48,8 @@
       <file leaf-file-name="Options.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Options.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65423244" vertical-offset="0" max-vertical-offset="893">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.62697273" vertical-offset="0" max-vertical-offset="874">
+              <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -61,8 +61,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/function.resize.php" />
-        <option value="$PROJECT_DIR$/Options.php" />
         <option value="$PROJECT_DIR$/test/FunctionResizeTest.php" />
+        <option value="$PROJECT_DIR$/Options.php" />
       </list>
     </option>
   </component>
@@ -241,8 +241,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Options.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65423244" vertical-offset="0" max-vertical-offset="893">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.62697273" vertical-offset="0" max-vertical-offset="874">
+          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
           <folding />
         </state>
       </provider>
