@@ -2,8 +2,7 @@
 
 function resize($imagePath,$opts=null){
 	$imagePath = urldecode($imagePath);
-
-	# start configuration
+	
 	$opts = new Options($opts);
 	$cacheFolder = $opts['cacheFolder'];
 	$remoteFolder = $opts['remoteFolder'];
