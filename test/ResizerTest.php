@@ -19,5 +19,9 @@ class ResizerTest extends PHPUnit_Framework_TestCase {
         $resizer = new Resizer(new ImagePath(''), 'nonConfigurationObject');
     }
 
+    public function testInstantiation() {
+        $resizer = new Resizer(new ImagePath(''), 'nonConfigurationObject');
+    }
+
 
 }
