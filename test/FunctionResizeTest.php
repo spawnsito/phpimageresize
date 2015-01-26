@@ -40,7 +40,7 @@ class FunctionResizeTest extends PHPUnit_Framework_TestCase {
         $this->assertTrue($configured['maxOnly']);
     }
 
-    public function testDefaultsNotOverwrite() {
+    public function testDefaultsNotOverwriteConfiguration() {
         $options = new Options();
         $defaults = array(
             'crop' => false,
