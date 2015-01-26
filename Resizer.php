@@ -3,7 +3,7 @@
 
 class Resizer {
 
-    public __construct() {
-    
-}
+    public function __construct() {
+
+    }
 }
