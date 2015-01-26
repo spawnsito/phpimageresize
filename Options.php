@@ -35,7 +35,7 @@ class Options {
     }
 
     public function obtainRemote() {
-
+        return $this->opts['remoteFolder'];
     }
 
     private function sanitize($opts) {
