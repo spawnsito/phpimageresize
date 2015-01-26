@@ -60,6 +60,10 @@ class FunctionResizeTest extends PHPUnit_Framework_TestCase {
 
         $this->assertEquals('./cache/remote/', $options->obtainRemote());
     }
+
+    public function testObtainConvertPath() {
+        $options = new Options();
+    }
 }
 
 ?>
