@@ -12,7 +12,7 @@ class ResizerTest extends PHPUnit_Framework_TestCase {
     }
 
     public function testOptionalCollaboration() {
-        $resizer = new Resizer(new ImagePath());
+        $resizer = new Resizer(new ImagePath(''));
     }
 
 
