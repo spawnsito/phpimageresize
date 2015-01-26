@@ -39,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/ImagePath.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.15248796" vertical-offset="0" max-vertical-offset="627">
-              <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -261,7 +261,7 @@
     <entry file="file://$PROJECT_DIR$/ImagePath.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15248796" vertical-offset="0" max-vertical-offset="627">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
           <folding />
         </state>
       </provider>
