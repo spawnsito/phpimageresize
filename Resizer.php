@@ -3,7 +3,7 @@
 
 class Resizer {
 
-    public function __construct($path, $configuration=new Configuration()) {
+    public function __construct($path, $configuration=null)) {
         throw new InvalidArgumentException();
     }
 }
