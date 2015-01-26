@@ -9,4 +9,8 @@ class Resizer {
             $configuration = new Configuration();
         if (!($configuration instanceof Configuration)) throw new InvalidArgumentException();
     }
+
+    private function checkPath($path) {
+
+    }
 }
