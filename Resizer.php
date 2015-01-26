@@ -6,6 +6,7 @@ class Resizer {
 
     private $path;
     private $configuration;
+    private $fileSystem;
 
     public function __construct($path, $configuration=null) {
         if ($configuration == null) $configuration = new Configuration();
@@ -46,5 +47,5 @@ class Resizer {
     private function checkConfiguration($configuration) {
         if (!($configuration instanceof Configuration)) throw new InvalidArgumentException();
     }
-    
+
 }
