@@ -25,10 +25,7 @@ class FunctionResizeTest extends PHPUnit_Framework_TestCase {
     public function testNullOptsDefaults() {
 
         $nullOptions = new Options(null);
-
-        $notNullOptions = new Options($configuration);
-        $configured = $notNullOptions->asHash();
-
+        
         $this->assertEquals($defaults, $asHash);
         $this->assertEquals($defaults, $nullOptions->asHash());
         $this->assertTrue($configured['thumbnail']);
