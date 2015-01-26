@@ -16,6 +16,7 @@ class Resizer {
     }
 
     public function obtainFilePath() {
+        $fileSystem = $this->fileSystem();
         $imagePath = '';
         if($this->path->isHttpProtocol()):
             $filename = $this->path->obtainFileName();
