@@ -1,6 +1,7 @@
 <?php
 
 require 'ImagePath.php';
+require 'Configuration.php';
 
 function sanitize($path) {
 	return urldecode($path);
