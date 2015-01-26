@@ -14,6 +14,7 @@ class Resizer {
         $this->checkConfiguration($configuration);
         $this->path = $path;
         $this->configuration = $configuration;
+        $this->fileSystem = new FileSystem();
     }
 
     public function obtainFilePath() {
