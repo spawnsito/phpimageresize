@@ -27,7 +27,7 @@ class ResizerTest extends PHPUnit_Framework_TestCase {
     }
 
     public function testObtainLocallyCachedFilePath() {
-
+        $resizer = new Resizer(new ImagePath('');
     }
 
 
