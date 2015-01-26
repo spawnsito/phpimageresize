@@ -34,8 +34,8 @@ class Options {
         return $this->opts[self::CACHE_KEY];
     }
 
-    public  function obtainRemote() {
-        
+    public function obtainRemote() {
+
     }
 
     private function sanitize($opts) {
