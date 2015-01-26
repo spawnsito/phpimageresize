@@ -7,6 +7,7 @@ class Resizer {
         if ($configuration == null) $configuration = new Configuration();
         $this->checkPath($path);
         $this->checkConfiguration($configuration);
+        $this->path = $path;
     }
 
     public function obtainFilePath() {
