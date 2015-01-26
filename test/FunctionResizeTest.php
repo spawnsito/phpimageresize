@@ -23,14 +23,14 @@ class FunctionResizeTest extends PHPUnit_Framework_TestCase {
     }
 
     public function testNullOptsDefaults() {
-        $options = new Configuration(null);
+        $configuration = new Configuration(null);
 
-        $this->assertEquals($this->defaults, $options->asHash());
+        $this->assertEquals($this->defaults, $configuration->asHash());
     }
 
     public function testDefaults() {
-        $options = new Configuration();
-        $asHash = $options->asHash();
+        $configuration = new Configuration();
+        $asHash = $configuration->asHash();
 
         $this->assertEquals($this->defaults, $asHash);
     }
