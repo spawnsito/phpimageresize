@@ -4,6 +4,8 @@ class Options {
     const CACHE_FOLDER = './cache/';
     const REMOTE_FOLDER = './cache/remote/';
 
+    const CACHE_KEY = 'cacheFolder';
+
     private $opts;
 
     public function __construct($opts=array()) {
