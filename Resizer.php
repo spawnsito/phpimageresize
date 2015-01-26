@@ -4,6 +4,7 @@
 class Resizer {
 
     private $path;
+    private $configuration;
 
     public function __construct($path, $configuration=null) {
         if ($configuration == null) $configuration = new Configuration();
