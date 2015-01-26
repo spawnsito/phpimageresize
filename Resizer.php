@@ -4,7 +4,7 @@
 class Resizer {
 
     public function __construct($path, $configuration=null) {
-        if ($path)
+        if ($path instanceof)
         throw new InvalidArgumentException();
     }
 }
