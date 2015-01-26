@@ -14,7 +14,6 @@ function resize($imagePath,$opts=null){
 
 	$finfo = pathinfo($imagePath);
 	$ext = $finfo['extension'];
-
 	
 
 	if($path->isHttpProtocol()):
