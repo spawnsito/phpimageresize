@@ -13,13 +13,14 @@ function resize($imagePath,$opts=null){
 	$imagePath = $path->sanitizedPath();
 
 	$configuration = new Configuration($opts);
-
+	$resizer = new Resizer($path, $configuration);
+	
 	$opts = $configuration->asHash();
 
 	$finfo = pathinfo($imagePath);
 	$ext = $finfo['extension'];
 
-	$resizer = new Resizer($path, $configuration);
+
 
 	if($path->isHttpProtocol()):
 		$filename = $path->obtainFileName();
