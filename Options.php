@@ -5,6 +5,7 @@ class Options {
     const REMOTE_FOLDER = './cache/remote/';
 
     const CACHE_KEY = 'cacheFolder';
+    const REMOTE_KEY = 'remoteFolder';
 
     private $opts;
 
