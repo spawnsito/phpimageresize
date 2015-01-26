@@ -24,7 +24,7 @@ class Resizer {
             $filename = $this->path->obtainFileName();
             $local_filepath = $this->configuration->obtainRemote() .$filename;
             $download_image = true;
-            if($this->file_exists($local_filepath)):
+            if($this->fileSystem->file_exists($local_filepath)):
                 $opts = $this->configuration->asHash();
                 if(filemtime($local_filepath) < strtotime('+'.$opts['cache_http_minutes'].' minutes')):
                     $download_image = false;
