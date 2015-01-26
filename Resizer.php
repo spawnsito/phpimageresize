@@ -17,6 +17,10 @@ class Resizer {
         $this->fileSystem = new FileSystem();
     }
 
+    public function injectFileSystem() {
+
+    }
+
     public function obtainFilePath() {
         $imagePath = '';
 
