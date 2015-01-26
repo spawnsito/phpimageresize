@@ -31,7 +31,7 @@ class Options {
     }
 
     public function obtainCache() {
-        return $this->opts['cacheFolder'];
+        return $this->opts[self::CACHE_KEY];
     }
 
     private function sanitize($opts) {
