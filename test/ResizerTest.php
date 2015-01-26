@@ -11,5 +11,9 @@ class ResizerTest extends PHPUnit_Framework_TestCase {
         $resizer = new Resizer('anyNonPathObject');
     }
 
+    public function testNecessaryCollaboration() {
+        $resizer = new Resizer('anyNonPathObject');
+    }
+
 
 }
