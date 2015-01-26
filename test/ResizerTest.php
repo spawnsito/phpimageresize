@@ -21,6 +21,8 @@ class ResizerTest extends PHPUnit_Framework_TestCase {
 
     public function testInstantiation() {
         $resizer = new Resizer(new ImagePath(''), new Configuration());
+
+        $this->assertInstanceOf('Resizer');
     }
 
 
