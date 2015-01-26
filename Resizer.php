@@ -14,5 +14,9 @@ class Resizer {
         if (!($path instanceof ImagePath)) throw new InvalidArgumentException();
     }
 
-    
+    private function checkConfiguration($configuration) {
+        if ($configuration == null)
+            $configuration = new Configuration();
+        if (!($configuration instanceof Configuration)) throw new InvalidArgumentException();
+    }
 }
