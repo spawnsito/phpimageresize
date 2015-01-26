@@ -3,7 +3,7 @@
 function resize($imagePath,$opts=null){
 	$imagePath = urldecode($imagePath);
 
-	$opts = new Options($opts)->asHash();
+	$opts = new Options($opts);
 	$cacheFolder = $opts['cacheFolder'];
 	$remoteFolder = $opts['remoteFolder'];
 
