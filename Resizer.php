@@ -18,7 +18,7 @@ class Resizer {
     public function obtainFilePath() {
         $fileSystem = $this->fileSystem();
         $imagePath = '';
-        
+
         if($this->path->isHttpProtocol()):
             $filename = $this->path->obtainFileName();
             $local_filepath = $this->configuration->obtainRemote() .$filename;
@@ -46,4 +46,5 @@ class Resizer {
     private function checkConfiguration($configuration) {
         if (!($configuration instanceof Configuration)) throw new InvalidArgumentException();
     }
+    
 }
