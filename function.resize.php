@@ -1,4 +1,7 @@
 <?php
+function sanitize($path) {
+	return urldecode($path);
+}
 
 function resize($imagePath,$opts=null){
 	$imagePath = urldecode($imagePath);
