@@ -28,7 +28,7 @@ class Resizer {
                 $img = file_get_contents($imagePath);
                 file_put_contents($local_filepath,$img);
             endif;
-            $imagePath = $local_filepath;
+            return $local_filepath;
         endif;
     }
 
