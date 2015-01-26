@@ -4,7 +4,7 @@ function sanitize($path) {
 }
 
 function resize($imagePath,$opts=null){
-	$imagePath = urldecode($imagePath);
+	$imagePath = sanitize($imagePath);
 
 	$options = new Options($opts);
 	$opts = $options->asHash();
