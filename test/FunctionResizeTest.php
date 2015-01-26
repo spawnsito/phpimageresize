@@ -22,7 +22,7 @@ class FunctionResizeTest extends PHPUnit_Framework_TestCase {
         $this->assertInstanceOf('Options', new Options);
     }
 
-    public function testDefaults() {
+    public function testNullOptsDefaults() {
         $options = new Options();
         $defaults = array(
             'crop' => false,
