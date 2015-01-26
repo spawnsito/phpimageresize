@@ -4,7 +4,7 @@ include 'Options.php';
 
 class FunctionResizeTest extends PHPUnit_Framework_TestCase {
 
-    $defaults = array(
+    private $defaults = array(
         'crop' => false,
         'scale' => 'false',
         'thumbnail' => false,
