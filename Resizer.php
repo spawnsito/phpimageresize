@@ -17,7 +17,7 @@ class Resizer {
         $this->fileSystem = new FileSystem();
     }
 
-    public function injectFileSystem($fileSystem) {
+    public function injectFileSystem(FileSystem $fileSystem ) {
 
     }
 
