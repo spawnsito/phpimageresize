@@ -43,7 +43,7 @@ class Options {
         $result = array();
 
         if($opts == null) {
-            $result = $opts;
+           return array();
         }
 
         return $result;
