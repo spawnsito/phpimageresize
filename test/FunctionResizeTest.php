@@ -28,7 +28,7 @@ class FunctionResizeTest extends PHPUnit_Framework_TestCase {
 
         $configuration = array(
             'thumbnail' => true,
-            'maxOnly' => false
+            'maxOnly' => true
         );
 
         $notNullOptions = new Options($configuration);
