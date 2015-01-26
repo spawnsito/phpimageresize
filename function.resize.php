@@ -4,15 +4,7 @@ function resize($imagePath,$opts=null){
 	$imagePath = urldecode($imagePath);
 
 	# start configuration
-	$cacheFolder = './cache/';
-	$remoteFolder = $cacheFolder.'remote/';
-
-	$defaults = array('crop' => false, 'scale' => 'false', 'thumbnail' => false, 'maxOnly' => false, 
-	   'canvas-color' => 'transparent', 'output-filename' => false, 
-	   'cacheFolder' => $cacheFolder, 'remoteFolder' => $remoteFolder, 'quality' => 90, 'cache_http_minutes' => 20);
-
-	$opts = array_merge($defaults, $opts);    
-
+	$opts = new Options($opts);
 	$cacheFolder = $opts['cacheFolder'];
 	$remoteFolder = $opts['remoteFolder'];
 
