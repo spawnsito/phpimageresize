@@ -1,6 +1,6 @@
 <?php
 
 
-class Resize {
+class Resizer {
 
 }
