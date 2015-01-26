@@ -10,7 +10,6 @@ function sanitize($path) {
 
 function resize($imagePath,$opts=null){
 	$path = new ImagePath($imagePath);
-	
 	$configuration = new Configuration($opts);
 	$resizer = new Resizer($path, $configuration);
 
