@@ -13,4 +13,6 @@ class Resizer {
     private function checkPath($path) {
         if (!($path instanceof ImagePath)) throw new InvalidArgumentException();
     }
+
+    
 }
