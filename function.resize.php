@@ -16,10 +16,11 @@ function resize($imagePath,$opts=null){
 	$resizer = new Resizer($path, $configuration);
 
 	$opts = $configuration->asHash();
-
+	$imagePath = $path->sanitizedPath();
+	
 	$finfo = pathinfo($imagePath);
 	$ext = $finfo['extension'];
-	
+
 	if($path->isHttpProtocol()):
 		$filename = $path->obtainFileName();
 		$local_filepath = $configuration->obtainRemote() .$filename;
