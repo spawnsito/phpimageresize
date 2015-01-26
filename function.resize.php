@@ -17,7 +17,7 @@ function resize($imagePath,$opts=null){
 
 	if($path->isHttpProtocol()):
 		# grab the image, and cache it so we have something to work with..
-		list($filename) = explode('?',$finfo['basename']);
+		$filename = $path->obtainFileName();
 		$local_filepath = $configuration->obtainRemote() .$filename;
 		$download_image = true;
 		if(file_exists($local_filepath)):

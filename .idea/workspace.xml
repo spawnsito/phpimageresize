@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="function.resize.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="function.resize.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/function.resize.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.464286" vertical-offset="152" max-vertical-offset="2356">
-              <caret line="19" column="58" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.3354735" vertical-offset="152" max-vertical-offset="2356">
+              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -45,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImagePathTest.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ImagePathTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/ImagePathTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75601923" vertical-offset="118" max-vertical-offset="855">
+            <state vertical-scroll-proportion="-16.821428" vertical-offset="118" max-vertical-offset="855">
               <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
               <folding />
             </state>
@@ -63,9 +63,9 @@
         <option value="$PROJECT_DIR$/Options.php" />
         <option value="$PROJECT_DIR$/Configuration.php" />
         <option value="$PROJECT_DIR$/test/FunctionResizeTest.php" />
-        <option value="$PROJECT_DIR$/function.resize.php" />
         <option value="$PROJECT_DIR$/ImagePath.php" />
         <option value="$PROJECT_DIR$/test/ImagePathTest.php" />
+        <option value="$PROJECT_DIR$/function.resize.php" />
       </list>
     </option>
   </component>
@@ -250,18 +250,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/function.resize.php">
+    <entry file="file://$PROJECT_DIR$/test/ImagePathTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.464286" vertical-offset="152" max-vertical-offset="2356">
-          <caret line="19" column="58" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="58" />
+        <state vertical-scroll-proportion="-16.821428" vertical-offset="118" max-vertical-offset="855">
+          <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ImagePathTest.php">
+    <entry file="file://$PROJECT_DIR$/function.resize.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75601923" vertical-offset="118" max-vertical-offset="855">
-          <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+        <state vertical-scroll-proportion="0.3354735" vertical-offset="152" max-vertical-offset="2356">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
           <folding />
         </state>
       </provider>
