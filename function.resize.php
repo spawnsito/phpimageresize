@@ -1,5 +1,7 @@
 <?php
 
+require 'ImagePath.php';
+
 function sanitize($path) {
 	return urldecode($path);
 }
@@ -14,7 +16,8 @@ function resize($imagePath,$opts=null){
 
 	$finfo = pathinfo($imagePath);
 	$ext = $finfo['extension'];
-	
+
+
 
 	if($path->isHttpProtocol()):
 		$filename = $path->obtainFileName();
