@@ -1,4 +1,5 @@
 <?php
+
 function sanitize($path) {
 	return urldecode($path);
 }
