@@ -24,6 +24,7 @@ class ResizerTest extends PHPUnit_Framework_TestCase {
         $ramon = new Resizer(new ImagePath(''));
 
         $this->assertInstanceOf('Resizer', $resizer);
+        $this->assertInstanceOf('Resizer', $ramon);
     }
 
 
