@@ -11,6 +11,7 @@ function sanitize($path) {
 function resize($imagePath,$opts=null){
 	$path = new ImagePath($imagePath);
 	$configuration = new Configuration($opts);
+
 	$resizer = new Resizer($path, $configuration);
 
 	$opts = $configuration->asHash();
@@ -48,6 +49,7 @@ function resize($imagePath,$opts=null){
 	$filename = md5_file($imagePath);
 
 	// If the user has requested an explicit output-filename, do not use the cache directory.
+	$ext = $finfo['extension'];
 	if(false !== $opts['output-filename']) :
 		$newPath = $opts['output-filename'];
 	else:
