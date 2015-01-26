@@ -35,16 +35,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImagePathTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/ImagePathTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.321428" vertical-offset="0" max-vertical-offset="703">
-              <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ImagePath.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ImagePath.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,21 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FunctionResizeTest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/FunctionResizeTest.php">
+      <file leaf-file-name="ImagePathTest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/ImagePathTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84430176" vertical-offset="728" max-vertical-offset="1463">
-              <caret line="66" column="76" selection-start-line="66" selection-start-column="76" selection-end-line="66" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Configuration.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Configuration.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3571428" vertical-offset="0" max-vertical-offset="1121">
-              <caret line="2" column="9" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.88443017" vertical-offset="0" max-vertical-offset="741">
+              <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -83,9 +63,9 @@
         <option value="$PROJECT_DIR$/Options.php" />
         <option value="$PROJECT_DIR$/Configuration.php" />
         <option value="$PROJECT_DIR$/function.resize.php" />
-        <option value="$PROJECT_DIR$/test/ImagePathTest.php" />
         <option value="$PROJECT_DIR$/ImagePath.php" />
         <option value="$PROJECT_DIR$/test/FunctionResizeTest.php" />
+        <option value="$PROJECT_DIR$/test/ImagePathTest.php" />
       </list>
     </option>
   </component>
@@ -262,10 +242,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ImagePathTest.php">
+    <entry file="file://$PROJECT_DIR$/test/FunctionResizeTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.321428" vertical-offset="0" max-vertical-offset="703">
-          <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.84430176" vertical-offset="728" max-vertical-offset="1463">
+          <caret line="66" column="76" selection-start-line="66" selection-start-column="76" selection-end-line="66" selection-end-column="76" />
           <folding />
         </state>
       </provider>
@@ -278,10 +258,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/FunctionResizeTest.php">
+    <entry file="file://$PROJECT_DIR$/test/ImagePathTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84430176" vertical-offset="728" max-vertical-offset="1463">
-          <caret line="66" column="76" selection-start-line="66" selection-start-column="76" selection-end-line="66" selection-end-column="76" />
+        <state vertical-scroll-proportion="0.88443017" vertical-offset="0" max-vertical-offset="741">
+          <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
           <folding />
         </state>
       </provider>
