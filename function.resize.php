@@ -2,6 +2,7 @@
 
 require 'ImagePath.php';
 require 'Configuration.php';
+require 'Resizer.php';
 
 function sanitize($path) {
 	return urldecode($path);
