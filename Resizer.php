@@ -5,9 +5,7 @@ class Resizer {
 
     public function __construct($path, $configuration=null) {
         $this->checkPath($path);
-        if ($configuration == null)
-            $configuration = new Configuration();
-        if (!($configuration instanceof Configuration)) throw new InvalidArgumentException();
+        $this->checkConfiguration($configuration);
     }
 
     private function checkPath($path) {
