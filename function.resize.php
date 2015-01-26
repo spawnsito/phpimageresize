@@ -5,6 +5,7 @@ function resize($imagePath,$opts=null){
 
 	$options = new Options($opts);
 	$opts = $options->asHash();
+
 	$cacheFolder = $opts['cacheFolder'];
 	$remoteFolder = $opts['remoteFolder'];
 
