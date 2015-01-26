@@ -28,6 +28,10 @@ class Options {
         return $this->opts;
     }
 
+    public function obtainCache() {
+        
+    }
+
     private function sanitize($opts) {
         $result = array();
 
