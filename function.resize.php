@@ -19,7 +19,7 @@ function resize($imagePath,$opts=null){
 	$finfo = pathinfo($imagePath);
 	$ext = $finfo['extension'];
 
-
+	$resizer = new Resizer($path, $configuration);
 
 	if($path->isHttpProtocol()):
 		$filename = $path->obtainFileName();
