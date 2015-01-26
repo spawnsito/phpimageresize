@@ -7,5 +7,6 @@ class Resizer {
         if (!($path instanceof ImagePath)) throw new InvalidArgumentException();
         if ($configuration == null)
             $configuration = new Configuration();
+        if ($configuration instanceof Configuration)
     }
 }
