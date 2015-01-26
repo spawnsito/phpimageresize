@@ -18,7 +18,7 @@ class Options {
             'maxOnly' => false,
             'canvas-color' => 'transparent',
             'output-filename' => false,
-            'cacheFolder' => self::CACHE_FOLDER,
+            self::CACHE_KEY => self::CACHE_FOLDER,
             'remoteFolder' => self::REMOTE_FOLDER,
             'quality' => 90,
             'cache_http_minutes' => 20);
