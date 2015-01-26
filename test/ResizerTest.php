@@ -1,6 +1,7 @@
 <?php
 
 require 'Resizer.php';
+require 'ImagePath.php';
 
 class ResizerTest extends PHPUnit_Framework_TestCase {
 
