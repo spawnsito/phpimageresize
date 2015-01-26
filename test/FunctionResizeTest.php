@@ -50,21 +50,21 @@ class FunctionResizeTest extends PHPUnit_Framework_TestCase {
     }
 
     public function testObtainCache() {
-        $options = new Configuration();
+        $configuration = new Configuration();
 
-        $this->assertEquals('./cache/', $options->obtainCache());
+        $this->assertEquals('./cache/', $configuration->obtainCache());
     }
 
     public function testObtainRemote() {
-        $options = new Configuration();
+        $configuration = new Configuration();
 
-        $this->assertEquals('./cache/remote/', $options->obtainRemote());
+        $this->assertEquals('./cache/remote/', $configuration->obtainRemote());
     }
 
     public function testObtainConvertPath() {
-        $options = new Configuration();
+        $configuration = new Configuration();
 
-        $this->assertEquals('convert', $options->obtainConvertPath());
+        $this->assertEquals('convert', $configuration->obtainConvertPath());
     }
 }
 
