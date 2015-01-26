@@ -11,6 +11,9 @@ class ResizerTest extends PHPUnit_Framework_TestCase {
         $resizer = new Resizer('anyNonPathObject');
     }
 
+    /**
+     * @expectedException InvalidArgumentException
+     */
     public function testOptionalCollaboration() {
         $resizer = new Resizer(new ImagePath(''), 'nonConfigurationObject');
     }
