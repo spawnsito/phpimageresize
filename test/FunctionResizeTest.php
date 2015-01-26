@@ -23,21 +23,7 @@ class FunctionResizeTest extends PHPUnit_Framework_TestCase {
     }
 
     public function testNullOptsDefaults() {
-        $options = new Options();
-        $defaults = array(
-            'crop' => false,
-            'scale' => 'false',
-            'thumbnail' => false,
-            'maxOnly' => false,
-            'canvas-color' => 'transparent',
-            'output-filename' => false,
-            'cacheFolder' => './cache/',
-            'remoteFolder' => './cache/remote/',
-            'quality' => 90,
-            'cache_http_minutes' => 20
-        );
-
-        $asHash = $options->asHash();
+        
         $nullOptions = new Options(null);
 
         $configuration = array(
