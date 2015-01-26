@@ -9,9 +9,7 @@ function resize($imagePath,$opts=null){
 
 	$configuration = new Configuration($opts);
 	$opts = $configuration->asHash();
-
-	## you shouldn't need to configure anything else beyond this point
-
+	
 	$purl = parse_url($imagePath);
 	$finfo = pathinfo($imagePath);
 	$ext = $finfo['extension'];
