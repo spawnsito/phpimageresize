@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="function.resize.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="function.resize.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/function.resize.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.178572" vertical-offset="0" max-vertical-offset="2489">
-              <caret line="15" column="20" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.40889525" vertical-offset="0" max-vertical-offset="2489">
+              <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -45,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Options.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Options.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Options.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5451937" vertical-offset="0" max-vertical-offset="1121">
+            <state vertical-scroll-proportion="-13.571428" vertical-offset="0" max-vertical-offset="1121">
               <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
               <folding />
             </state>
@@ -60,9 +60,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/function.resize.php" />
         <option value="$PROJECT_DIR$/test/FunctionResizeTest.php" />
         <option value="$PROJECT_DIR$/Options.php" />
+        <option value="$PROJECT_DIR$/function.resize.php" />
       </list>
     </option>
   </component>
@@ -223,14 +223,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/function.resize.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.178572" vertical-offset="0" max-vertical-offset="2489">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/FunctionResizeTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-21.5" vertical-offset="652" max-vertical-offset="1463">
@@ -241,8 +233,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Options.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5451937" vertical-offset="0" max-vertical-offset="1121">
+        <state vertical-scroll-proportion="-13.571428" vertical-offset="0" max-vertical-offset="1121">
           <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function.resize.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40889525" vertical-offset="0" max-vertical-offset="2489">
+          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
           <folding />
         </state>
       </provider>
