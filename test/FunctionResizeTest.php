@@ -58,12 +58,7 @@ class FunctionResizeTest extends PHPUnit_Framework_TestCase {
         $options = new Options();
         $asHash = $options->asHash();
 
-        $notNullOptions = new Options($configuration);
-        $configured = $notNullOptions->asHash();
-
         $this->assertEquals($this->defaults, $asHash);
-        $this->assertTrue($configured['thumbnail']);
-        $this->assertTrue($configured['maxOnly']);
     }
 
     public function testDefaultsNotOverwriteConfiguration() {
