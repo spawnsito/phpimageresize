@@ -13,8 +13,6 @@ class Resizer {
     }
 
     private function checkConfiguration($configuration) {
-        if ($configuration == null)
-            $configuration = new Configuration();
         if (!($configuration instanceof Configuration)) throw new InvalidArgumentException();
     }
 }
