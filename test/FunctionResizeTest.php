@@ -18,7 +18,7 @@ class FunctionResizeTest extends PHPUnit_Framework_TestCase {
             'canvas-color' => 'transparent',
             'output-filename' => false,
             'cacheFolder' => './cache/',
-            'remoteFolder' => './cache/remote',
+            'remoteFolder' => './cache/remote/',
             'quality' => 90,
             'cache_http_minutes' => 20
         );
