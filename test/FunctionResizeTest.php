@@ -56,19 +56,6 @@ class FunctionResizeTest extends PHPUnit_Framework_TestCase {
 
     public function testDefaultsNotOverwriteConfiguration() {
         $options = new Options();
-        $defaults = array(
-            'crop' => false,
-            'scale' => 'false',
-            'thumbnail' => false,
-            'maxOnly' => false,
-            'canvas-color' => 'transparent',
-            'output-filename' => false,
-            'cacheFolder' => './cache/',
-            'remoteFolder' => './cache/remote/',
-            'quality' => 90,
-            'cache_http_minutes' => 20
-        );
-
         $asHash = $options->asHash();
         $nullOptions = new Options(null);
 
@@ -80,7 +67,7 @@ class FunctionResizeTest extends PHPUnit_Framework_TestCase {
         $notNullOptions = new Options($configuration);
         $configured = $notNullOptions->asHash();
 
-        $this->assertEquals($defaults, $asHash);
+        $this->assertEquals($this->defaults, $asHash);
         $this->assertEquals($defaults, $nullOptions->asHash());
         $this->assertTrue($configured['thumbnail']);
         $this->assertTrue($configured['maxOnly']);
