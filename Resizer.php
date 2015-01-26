@@ -15,9 +15,9 @@ class Resizer {
     }
 
     public function obtainFilePath() {
-        if($path->isHttpProtocol()):
-            $filename = $path->obtainFileName();
-            $local_filepath = $configuration->obtainRemote() .$filename;
+        if($this->path->isHttpProtocol()):
+            $filename = $this->path->obtainFileName();
+            $local_filepath = $this->configuration->obtainRemote() .$filename;
             $download_image = true;
             if(file_exists($local_filepath)):
                 if(filemtime($local_filepath) < strtotime('+'.$opts['cache_http_minutes'].' minutes')):
