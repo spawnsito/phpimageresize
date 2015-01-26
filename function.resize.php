@@ -17,8 +17,7 @@ function resize($imagePath,$opts=null){
 	$opts = $configuration->asHash();
 	$imagePath = $path->sanitizedPath();
 
-	$finfo = pathinfo($imagePath);
-
+	
 	if($path->isHttpProtocol()):
 		$filename = $path->obtainFileName();
 		$local_filepath = $configuration->obtainRemote() .$filename;
