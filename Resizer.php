@@ -18,7 +18,7 @@ class Resizer {
     }
 
     public function injectFileSystem(FileSystem $fileSystem) {
-
+        $this->fileSystem = $fileSystem;
     }
 
     public function obtainFilePath() {
