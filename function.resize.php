@@ -5,7 +5,7 @@ function resize($imagePath,$opts=null){
 
 	# start configuration
 	$cacheFolder = './cache/';
-	$remoteFolder = $cacheFolder.'remote/'; # path to the folder you wish to download remote images into
+	$remoteFolder = $cacheFolder.'remote/';
 
 	$defaults = array('crop' => false, 'scale' => 'false', 'thumbnail' => false, 'maxOnly' => false, 
 	   'canvas-color' => 'transparent', 'output-filename' => false, 
