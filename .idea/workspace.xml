@@ -35,20 +35,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImagePath.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ImagePath.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ImagePath.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7624398" vertical-offset="0" max-vertical-offset="760">
+            <state vertical-scroll-proportion="-16.964285" vertical-offset="0" max-vertical-offset="760">
               <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImagePathTest.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ImagePathTest.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/ImagePathTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.142857" vertical-offset="118" max-vertical-offset="855">
+            <state vertical-scroll-proportion="0.7255217" vertical-offset="118" max-vertical-offset="855">
               <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
               <folding />
             </state>
@@ -242,10 +242,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ImagePathTest.php">
+    <entry file="file://$PROJECT_DIR$/ImagePath.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.142857" vertical-offset="118" max-vertical-offset="855">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+        <state vertical-scroll-proportion="-16.964285" vertical-offset="0" max-vertical-offset="760">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -258,10 +258,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ImagePath.php">
+    <entry file="file://$PROJECT_DIR$/test/ImagePathTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7624398" vertical-offset="0" max-vertical-offset="760">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.7255217" vertical-offset="118" max-vertical-offset="855">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
           <folding />
         </state>
       </provider>
