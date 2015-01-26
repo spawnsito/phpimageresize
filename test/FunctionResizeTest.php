@@ -52,7 +52,7 @@ class FunctionResizeTest extends PHPUnit_Framework_TestCase {
     public function testObtainCache() {
         $options = new Options();
 
-        $this->assertEquals();
+        $this->assertEquals('./cache/', $options->obtainCache());
 
     }
 }
