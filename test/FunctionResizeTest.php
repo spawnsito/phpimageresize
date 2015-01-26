@@ -64,7 +64,7 @@ class FunctionResizeTest extends PHPUnit_Framework_TestCase {
     public function testObtainConvertPath() {
         $options = new Options();
 
-        $this->assertEquals('convert', $options->obtainConvertPath);
+        $this->assertEquals('convert', $options->obtainConvertPath());
     }
 }
 

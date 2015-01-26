@@ -40,7 +40,7 @@ class Options {
     }
 
     public function obtainConvertPath() {
-        
+
     }
 
     private function sanitize($opts) {
