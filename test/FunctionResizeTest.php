@@ -26,7 +26,7 @@ class FunctionResizeTest extends PHPUnit_Framework_TestCase {
         $asHash = $options->asHash();
 
         $this->assertEquals($defaults, $asHash);
-        $this->assertEquals($defaults, new Options(null)->asHash());
+        $this->assertEquals($defaults, (new Options(null))->asHash());
 
     }
 }
