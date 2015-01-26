@@ -29,7 +29,7 @@ class Options {
     }
 
     public function obtainCache() {
-        
+        return $this->opts['cacheFolder'];
     }
 
     private function sanitize($opts) {
