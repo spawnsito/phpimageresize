@@ -26,13 +26,13 @@ class Resizer {
             $download_image = true;
             if($this->fileSystem->file_exists($local_filepath)):
                 $opts = $this->configuration->asHash();
-                if(filemtime($local_filepath) < strtotime('+'.$opts['cache_http_minutes'].' minutes')):
+                if($this->fileSystem->filemtime($local_filepath) < strtotime('+'.$opts['cache_http_minutes'].' minutes')):
                     $download_image = false;
                 endif;
             endif;
             if($download_image == true):
-                $img = file_get_contents($imagePath);
-                file_put_contents($local_filepath,$img);
+                $img = $this->fileSystem->file_get_contents($imagePath);
+                $this->fileSystem->file_put_contents($local_filepath,$img);
             endif;
             $imagePath = $local_filepath;
         endif;
