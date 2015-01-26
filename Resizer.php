@@ -31,6 +31,8 @@ class Resizer {
             endif;
             $imagePath = $local_filepath;
         endif;
+
+        return $imagePath;
     }
 
     private function checkPath($path) {
