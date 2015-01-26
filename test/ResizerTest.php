@@ -32,7 +32,7 @@ class ResizerTest extends PHPUnit_Framework_TestCase {
         $stub = $this->getMockBuilder('FileSystem')
             ->getMock();
         $stub->method('file_get_contents')
-            ->willReturn('foo');
+            ->willReturn('./cache/remote/mf.jpg');
 
         $resizer->injectFileSystem($stub);
 
