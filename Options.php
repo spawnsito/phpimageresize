@@ -39,6 +39,10 @@ class Options {
         return $this->opts[self::REMOTE_KEY];
     }
 
+    public function obtainConvertPath() {
+        
+    }
+
     private function sanitize($opts) {
         if($opts == null) return array();
 
