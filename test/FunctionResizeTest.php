@@ -62,7 +62,6 @@ class FunctionResizeTest extends PHPUnit_Framework_TestCase {
     }
 
     public function testDefaultsNotOverwriteConfiguration() {
-        $options = new Options();
 
         $configuration = array(
             'thumbnail' => true,
