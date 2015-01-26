@@ -36,7 +36,7 @@ class Options {
     }
 
     public function obtainRemote() {
-        return $this->opts['remoteFolder'];
+        return $this->opts[self::REMOTE_KEY];
     }
 
     private function sanitize($opts) {
