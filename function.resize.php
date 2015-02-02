@@ -82,7 +82,10 @@ function composeResizeOptions($imagePath, $configuration) {
 	return $resize;
 }
 
-
+function commandWithScale() {
+	$cmd = $configuration->obtainConvertPath() ." ". escapeshellarg($imagePath) ." -resize ". escapeshellarg($resize) .
+		" -quality ". escapeshellarg($opts['quality']) . " " . escapeshellarg($newPath);
+}
 
 function doResize($imagePath, $newPath, $configuration) {
 	$opts = $configuration->asHash();
