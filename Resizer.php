@@ -44,7 +44,7 @@ class Resizer {
         return $imagePath;
     }
 
-    private function isInCache() {
+    private function isInCache($filePath) {
         $inCache = false;
         if($this->fileSystem->file_exists($local_filepath)):
             $opts = $this->configuration->asHash();
