@@ -40,7 +40,7 @@ function resize($imagePath,$opts=null){
 	$newPath = $configuration->obtainCache() .$filename.$widthSignal.$heightSignal.$cropSignal.$scaleSignal.$extension;
 
 	if($opts['output-filename']) {
-
+		$newPath = $opts['output-filename'];
 	}
 	if(false !== $opts['output-filename']) :
 		$newPath = $opts['output-filename'];
