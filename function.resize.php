@@ -19,6 +19,10 @@ function resize($imagePath,$opts=null){
 
 	try {
 		$filePath = $resizer->obtainFilePath();
+
+
+	} catch Exception e {
+		return 'image not found';
 	}
 	$filePath = $resizer->obtainFilePath();
 
