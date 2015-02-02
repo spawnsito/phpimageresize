@@ -23,6 +23,7 @@ function isInCache($path, $imagePath) {
 }
 
 function composeNewPath($imagePath, $configuration, $filename) {
+	$filename = md5_file($imagePath);
 	$finfo = pathinfo($imagePath);
 	$ext = $finfo['extension'];
 
