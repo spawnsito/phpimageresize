@@ -30,7 +30,7 @@ class Resizer {
             $inCache = $this->isInCache($local_filepath);
 
             if(!$inCache):
-                $this->download($imagePath, $local_filepath);
+                $this->download($filename, $local_filepath);
             endif;
             $imagePath = $local_filepath;
         endif;
