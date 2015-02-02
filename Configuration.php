@@ -7,6 +7,7 @@ class Configuration {
     const CACHE_KEY = 'cacheFolder';
     const REMOTE_KEY = 'remoteFolder';
     const CACHE_MINUTES_KEY = 'cache_http_minutes';
+    const WIDTH_KEY = 'width';
 
     const CONVERT_PATH = 'convert';
 
@@ -26,7 +27,7 @@ class Configuration {
             self::REMOTE_KEY => self::REMOTE_PATH,
             'quality' => 90,
             'cache_http_minutes' => 20,
-            'w' => null,
+            'width' => null,
             'h' => null);
 
         $this->opts = array_merge($defaults, $sanitized);
@@ -46,6 +47,10 @@ class Configuration {
 
     public function obtainConvertPath() {
         return self::CONVERT_PATH;
+    }
+
+    public function obtainWidth() {
+        return $this->opts[self::WIDTH_KEY];
     }
 
     public function obtainCacheMinutes() {
