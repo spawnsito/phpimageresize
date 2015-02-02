@@ -49,7 +49,6 @@ function doResize($imagePath, $newPath, $configuration) {
 	$w = $configuration->obtainWidth();
 	$h = $configuration->obtainHeight();
 
-
 	if(!empty($w) and !empty($h)):
 
 		list($width,$height) = getimagesize($imagePath);
