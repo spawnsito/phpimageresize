@@ -45,21 +45,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Resizer.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Resizer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Resizer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65423244" vertical-offset="665" max-vertical-offset="1463">
+            <state vertical-scroll-proportion="-16.285715" vertical-offset="665" max-vertical-offset="1463">
               <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Configuration.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Configuration.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Configuration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6785714" vertical-offset="19" max-vertical-offset="1121">
-              <caret line="2" column="9" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.72740316" vertical-offset="405" max-vertical-offset="1178">
+              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -81,7 +81,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Options.php" />
-        <option value="$PROJECT_DIR$/Configuration.php" />
         <option value="$PROJECT_DIR$/test/FunctionResizeTest.php" />
         <option value="$PROJECT_DIR$/ImagePath.php" />
         <option value="$PROJECT_DIR$/Resize.php" />
@@ -91,6 +90,7 @@
         <option value="$PROJECT_DIR$/function.resize.php" />
         <option value="$PROJECT_DIR$/test/ResizerTest.php" />
         <option value="$PROJECT_DIR$/Resizer.php" />
+        <option value="$PROJECT_DIR$/Configuration.php" />
       </list>
     </option>
   </component>
@@ -288,14 +288,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Configuration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6785714" vertical-offset="19" max-vertical-offset="1121">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/function.resize.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.964285" vertical-offset="0" max-vertical-offset="2223">
@@ -314,8 +306,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Resizer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65423244" vertical-offset="665" max-vertical-offset="1463">
+        <state vertical-scroll-proportion="-16.285715" vertical-offset="665" max-vertical-offset="1463">
           <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72740316" vertical-offset="405" max-vertical-offset="1178">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
           <folding />
         </state>
       </provider>

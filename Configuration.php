@@ -45,6 +45,9 @@ class Configuration {
         return self::CONVERT_PATH;
     }
 
+    public function obtainCacheMinutes() {
+        
+    }
     private function sanitize($opts) {
         if($opts == null) return array();
 
