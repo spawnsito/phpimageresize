@@ -29,6 +29,7 @@ class ResizerTest extends PHPUnit_Framework_TestCase {
 
     public function testObtainLocallyCachedFilePath() {
         $configuration = new Configuration(array('width' => 800, 'height' => 600));
+        $imagePath = new ImagePath('http://martinfowler.com/mf.jpg?query=hello&s=fowler');
         $resizer = new Resizer(new ImagePath('http://martinfowler.com/mf.jpg?query=hello&s=fowler'));
 
         $stub = $this->getMockBuilder('FileSystem')
