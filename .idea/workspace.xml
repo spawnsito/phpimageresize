@@ -59,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/Configuration.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.7546628" vertical-offset="386" max-vertical-offset="1178">
-              <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+              <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -315,7 +315,7 @@
     <entry file="file://$PROJECT_DIR$/Configuration.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7546628" vertical-offset="386" max-vertical-offset="1178">
-          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+          <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
           <folding />
         </state>
       </provider>
