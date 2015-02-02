@@ -102,6 +102,8 @@ function commandWithoutScale($imagePath, $newPath, $configuration) {
 		" -size ". escapeshellarg($w ."x". $h) .
 		" xc:". escapeshellarg($opts['canvas-color']) .
 		" +swap -gravity center -composite -quality ". escapeshellarg($opts['quality'])." ".escapeshellarg($newPath);
+
+	return $cmd;
 }
 
 function doResize($imagePath, $newPath, $configuration) {
