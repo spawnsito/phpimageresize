@@ -68,9 +68,9 @@ function doResize($imagePath, $newPath, $configuration) {
 	$h = $configuration->obtainHeight();
 
 	if(!empty($w) and !empty($h)):
-
-		list($width,$height) = getimagesize($imagePath);
 		$resize = $w;
+		list($width,$height) = getimagesize($imagePath);
+
 		$panoramic = $width > $height;
 
 		if($panoramic):
