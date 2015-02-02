@@ -54,6 +54,10 @@ class Configuration {
         return $this->opts[self::WIDTH_KEY];
     }
 
+    public function obtainHeight() {
+        return $this->opts[self::HEIGHT_KEY];
+    }
+
     public function obtainCacheMinutes() {
         return $this->opts[self::CACHE_MINUTES_KEY];
     }
