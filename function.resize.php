@@ -47,20 +47,6 @@ function resize($imagePath,$opts=null){
 		return 'cannot resize the image';
 	}
 
-	if(false !== $opts['output-filename']) :
-		$newPath = $opts['output-filename'];
-	else:
-        if(!empty($w) and !empty($h)):
-            $newPath = $configuration->obtainCache() .$filename.'_w'.$w.'_h'.$h.$cropSignal.$scaleSignal.'.'.$ext;
-        elseif(!empty($w)):
-            $newPath = $configuration->obtainCache() .$filename.'_w'.$w.'.'.$ext;
-        elseif(!empty($h)):
-            $newPath = $configuration->obtainCache() .$filename.'_h'.$h.'.'.$ext;
-        else:
-            return false;
-        endif;
-	endif;
-
 	$create = true;
 
     if(file_exists($newPath) == true):
