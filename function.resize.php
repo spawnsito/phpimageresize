@@ -35,6 +35,7 @@ function resize($imagePath,$opts=null){
 	$scaleSignal = isset($opts['scale']) && $opts['scale'] == true ? "_sc" : "";
 	$widthSignal = !empty($w) ? '_w'.$w : '';
 	$heightSignal = !empty($h) ? '_h'.$h : '';
+	$extension = '.'.$ext;
 	$newPath = $configuration->obtainCache() .$filename.$widthSignal.$heightSignal.$cropSignal.$scaleSignal.$extension;
 
 	if(false !== $opts['output-filename']) :
