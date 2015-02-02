@@ -92,7 +92,7 @@ function commandWithScale($imagePath, $newPath, $configuration) {
 	return $cmd;
 }
 
-function commandWithoutScale($imagePath, $newPath, $configuration) {
+function commandWithCrop($imagePath, $newPath, $configuration) {
 	$opts = $configuration->asHash();
 	$w = $configuration->obtainWidth();
 	$h = $configuration->obtainHeight();
