@@ -66,7 +66,7 @@ function composeCropOptions($imagePath, $configuration) {
 	$opts = $configuration->asHash();
 	$w = $configuration->obtainWidth();
 	$h = $configuration->obtainHeight();
-	
+
 	if(isPanoramic($imagePath)):
 		if(true === $opts['crop']):
 			$resize = "x".$h;
@@ -77,6 +77,8 @@ function composeCropOptions($imagePath, $configuration) {
 			$resize = $w;
 		endif;
 	endif;
+
+	return $resize;
 }
 
 function doResize($imagePath, $newPath, $configuration) {
