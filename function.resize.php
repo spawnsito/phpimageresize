@@ -105,7 +105,6 @@ function resize($imagePath,$opts=null){
 	if(empty($opts['output-filename']) && empty($w) && empty($h)) {
 		return 'cannot resize the image';
 	}
-	
 
 	try {
 		$imagePath = $resizer->obtainFilePath();
