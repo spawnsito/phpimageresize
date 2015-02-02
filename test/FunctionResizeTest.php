@@ -14,7 +14,9 @@ class FunctionResizeTest extends PHPUnit_Framework_TestCase {
         'cacheFolder' => './cache/',
         'remoteFolder' => './cache/remote/',
         'quality' => 90,
-        'cache_http_minutes' => 20
+        'cache_http_minutes' => 20,
+        'width' => null,
+        'height' => null
     );
 
     public function testOpts()
