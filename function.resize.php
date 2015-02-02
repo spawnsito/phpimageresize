@@ -96,6 +96,8 @@ function commandWithoutScale($imagePath, $newPath, $configuration) {
 	$opts = $configuration->asHash();
 	$w = $configuration->obtainWidth();
 	$h = $configuration->obtainHeight();
+	$resize = composeResizeOptions($imagePath, $configuration);
+
 	$cmd = $configuration->obtainConvertPath() ." ". escapeshellarg($imagePath) ." -resize ". escapeshellarg($resize) .
 		" -size ". escapeshellarg($w ."x". $h) .
 		" xc:". escapeshellarg($opts['canvas-color']) .
