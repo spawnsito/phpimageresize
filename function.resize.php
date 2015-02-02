@@ -17,9 +17,12 @@ function resize($imagePath,$opts=null){
 	$opts = $configuration->asHash();
 	$imagePath = $path->sanitizedPath();
 
+	try {
+		$filePath = $resizer->obtainFilePath();
+	}
 	$filePath = $resizer->obtainFilePath();
 
-	
+
 
 	if(isset($opts['w'])): $w = $opts['w']; endif;
 	if(isset($opts['h'])): $h = $opts['h']; endif;
