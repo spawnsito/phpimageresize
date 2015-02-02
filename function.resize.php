@@ -9,7 +9,7 @@ function sanitize($path) {
 }
 
 function isInCache($path, $imagePath) {
-	$create = true;
+	$create = false;
 	if(file_exists($path) == true):
 		$create = false;
 		$origFileTime = date("YmdHis",filemtime($imagePath));
