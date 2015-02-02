@@ -45,6 +45,10 @@ function composeNewPath($imagePath, $configuration) {
 }
 
 function resize($imagePath,$opts=null){
+	if(empty($opts['output-filename']) && empty($w) && empty($h)) {
+		return 'cannot resize the image';
+	}
+
 	$path = new ImagePath($imagePath);
 	$configuration = new Configuration($opts);
 
@@ -63,7 +67,7 @@ function resize($imagePath,$opts=null){
 	$h = $configuration->obtainHeight();
 
 	$newPath = composeNewPath($imagePath, $configuration);
-	
+
 	if(empty($opts['output-filename']) && empty($w) && empty($h)) {
 		return 'cannot resize the image';
 	}
