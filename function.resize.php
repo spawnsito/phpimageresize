@@ -86,7 +86,7 @@ function doResize($imagePath, $newPath, $configuration) {
 	$c = exec($cmd, $output, $return_code);
 	if($return_code != 0) {
 		error_log("Tried to execute : $cmd, return code: $return_code, output: " . print_r($output, true));
-		return false;
+		throw new RuntimeException();
 	}
 }
 
