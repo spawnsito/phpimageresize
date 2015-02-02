@@ -22,7 +22,7 @@ function resize($imagePath,$opts=null){
 	} catch (Exception $e) {
 		return 'image not found';
 	}
-	
+
 	$w = $configuration->obtainWidth();
 	$h = $configuration->obtainHeight();
 
