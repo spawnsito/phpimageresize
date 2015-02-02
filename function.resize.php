@@ -38,11 +38,7 @@ function composeNewPath($imagePath, $configuration, $filename) {
 		$newPath = $opts['output-filename'];
 	}
 
-	if(empty($opts['output-filename']) && empty($w) && empty($h)) {
-		return 'cannot resize the image';
-	}
-
-	return 
+	return $newPath;
 }
 
 function resize($imagePath,$opts=null){
