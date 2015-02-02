@@ -44,7 +44,7 @@ function composeNewPath($imagePath, $configuration) {
 	return $newPath;
 }
 
-function doResize($imagePath) {
+function doResize($imagePath, $newPath) {
 	if(!empty($w) and !empty($h)):
 
 		list($width,$height) = getimagesize($imagePath);
