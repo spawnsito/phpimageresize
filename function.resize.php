@@ -117,10 +117,7 @@ function doResize($imagePath, $newPath, $configuration) {
 		if(true === $opts['scale']):
 			$cmd = commandWithScale($imagePath, $newPath, $configuration);
 		else:
-			$cmd = $configuration->obtainConvertPath() ." ". escapeshellarg($imagePath) ." -resize ". escapeshellarg($resize) .
-				" -size ". escapeshellarg($w ."x". $h) .
-				" xc:". escapeshellarg($opts['canvas-color']) .
-				" +swap -gravity center -composite -quality ". escapeshellarg($opts['quality'])." ".escapeshellarg($newPath);
+			$cmd = commandWithoutScale($imagePath, $newPath, $configuration)
 		endif;
 
 	else:
