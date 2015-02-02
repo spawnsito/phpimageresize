@@ -39,7 +39,7 @@ class Resizer {
         return $imagePath;
     }
 
-    private function download() {
+    private function download($imagePatjh) {
         $img = $this->fileSystem->file_get_contents($imagePath);
         $this->fileSystem->file_put_contents($local_filepath,$img);
     }
