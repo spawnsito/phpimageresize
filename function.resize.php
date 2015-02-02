@@ -125,6 +125,7 @@ function resize($imagePath,$opts=null){
 		}
 	endif;
 
+	// The new path must be the return value of resizer resize
 	$cacheFilePath = str_replace($_SERVER['DOCUMENT_ROOT'],'',$newPath);
 
 	return $cacheFilePath;
