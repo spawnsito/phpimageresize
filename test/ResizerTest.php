@@ -36,7 +36,7 @@ class ResizerTest extends PHPUnit_Framework_TestCase {
             ->getMock();
         $stub->method('file_get_contents')
             ->willReturn('foo');
-        
+
         $stub->method('file_exists')
             ->willReturn(true);
 

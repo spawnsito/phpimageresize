@@ -44,6 +44,48 @@ function composeNewPath($imagePath, $configuration) {
 	return $newPath;
 }
 
+function doResize($imagePath) {
+	if(!empty($w) and !empty($h)):
+
+		list($width,$height) = getimagesize($imagePath);
+		$resize = $w;
+
+		if($width > $height):
+			$resize = $w;
+			if(true === $opts['crop']):
+				$resize = "x".$h;
+			endif;
+		else:
+			$resize = "x".$h;
+			if(true === $opts['crop']):
+				$resize = $w;
+			endif;
+		endif;
+
+		if(true === $opts['scale']):
+			$cmd = $configuration->obtainConvertPath() ." ". escapeshellarg($imagePath) ." -resize ". escapeshellarg($resize) .
+				" -quality ". escapeshellarg($opts['quality']) . " " . escapeshellarg($newPath);
+		else:
+			$cmd = $configuration->obtainConvertPath() ." ". escapeshellarg($imagePath) ." -resize ". escapeshellarg($resize) .
+				" -size ". escapeshellarg($w ."x". $h) .
+				" xc:". escapeshellarg($opts['canvas-color']) .
+				" +swap -gravity center -composite -quality ". escapeshellarg($opts['quality'])." ".escapeshellarg($newPath);
+		endif;
+
+	else:
+		$cmd = $configuration->obtainConvertPath() ." " . escapeshellarg($imagePath) .
+			" -thumbnail ". (!empty($h) ? 'x':'') . $w ."".
+			(isset($opts['maxOnly']) && $opts['maxOnly'] == true ? "\>" : "") .
+			" -quality ". escapeshellarg($opts['quality']) ." ". escapeshellarg($newPath);
+	endif;
+
+	$c = exec($cmd, $output, $return_code);
+	if($return_code != 0) {
+		error_log("Tried to execute : $cmd, return code: $return_code, output: " . print_r($output, true));
+		return false;
+	}
+}
+
 function resize($imagePath,$opts=null){
 
 
