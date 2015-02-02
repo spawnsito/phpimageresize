@@ -22,7 +22,7 @@ function isInCache($path, $imagePath) {
 	return $isInCache;
 }
 
-function composeNewPath($imagePath, $configuration) {
+function composeNewPath($imagePath, $configuration, $filename) {
 	$finfo = pathinfo($imagePath);
 	$ext = $finfo['extension'];
 
