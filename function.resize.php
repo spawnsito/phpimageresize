@@ -115,10 +115,6 @@ function doResize($imagePath, $newPath, $configuration) {
 		$cmd = commandWithCrop($imagePath, $newPath, $configuration);
 		if(true === $opts['scale']):
 			$cmd = commandWithScale($imagePath, $newPath, $configuration);
-		else:
-			$cmd = commandWithCrop($imagePath, $newPath, $configuration);
-		endif;
-
 	else:
 		$cmd = defaultShellCommand($configuration, $imagePath, $newPath);
 	endif;
