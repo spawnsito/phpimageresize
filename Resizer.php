@@ -46,12 +46,14 @@ class Resizer {
 
     private function isInCache($filePath) {
         $inCache = false;
-        if($this->fileSystem->file_exists($local_filepath)):
+        if($this->fileSystem->file_exists($filePath)):
             $opts = $this->configuration->asHash();
-            if($this->fileSystem->filemtime($local_filepath) < strtotime('+'.$opts['cache_http_minutes'].' minutes')):
+            if($this->fileSystem->filemtime($filePath) < strtotime('+'.$opts['cache_http_minutes'].' minutes')):
                 $inCache = true;
             endif;
         endif;
+
+        return $inCache;
     }
 
     private function checkPath($path) {
