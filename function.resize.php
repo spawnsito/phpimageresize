@@ -63,7 +63,10 @@ function isPanoramic($imagePath) {
 }
 
 function composeCropOptions($imagePath, $configuration) {
-
+	$opts = $configuration->asHash();
+	$w = $configuration->obtainWidth();
+	$h = $configuration->obtainHeight();
+	
 	if(isPanoramic($imagePath)):
 		if(true === $opts['crop']):
 			$resize = "x".$h;
