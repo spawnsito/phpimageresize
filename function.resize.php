@@ -30,7 +30,9 @@ function resize($imagePath,$opts=null){
 
 	$finfo = pathinfo($imagePath);
 	$ext = $finfo['extension'];
-	
+
+	$cropSignal = isset($opts['crop']) && $opts['crop'] == true ? "_cp" : "";
+
 	if(false !== $opts['output-filename']) :
 		$newPath = $opts['output-filename'];
 	else:
