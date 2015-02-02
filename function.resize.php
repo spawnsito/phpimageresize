@@ -57,6 +57,10 @@ function defaultShellCommand($configuration, $imagePath, $newPath) {
 	return $command;
 }
 
+function isPanoramic() {
+	
+}
+
 function doResize($imagePath, $newPath, $configuration) {
 	$opts = $configuration->asHash();
 	$w = $configuration->obtainWidth();
