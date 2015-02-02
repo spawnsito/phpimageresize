@@ -29,7 +29,7 @@ class Resizer {
             $local_filepath = $this->configuration->obtainRemote() .$filename;
             $inCache = $this->isInCache($local_filepath);
 
-            if($download_image == true):
+            if(!$inCache):
                 $img = $this->fileSystem->file_get_contents($imagePath);
                 $this->fileSystem->file_put_contents($local_filepath,$img);
             endif;
