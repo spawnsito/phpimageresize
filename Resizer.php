@@ -48,9 +48,7 @@ class Resizer {
         $inCache = false;
         if($this->fileSystem->file_exists($filePath)):
             $opts = $this->configuration->asHash();
-            if($this->fileSystem->filemtime($filePath) < strtotime('+'.$opts['cache_http_minutes'].' minutes')):
-                $inCache = true;
-            endif;
+            $inCache = $this->fileNotExpired($filePath);
         endif;
 
         return $inCache;
