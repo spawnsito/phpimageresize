@@ -13,7 +13,7 @@ function isInCache($path, $imagePath) {
 	if(file_exists($path) == true):
 		$isInCache = true;
 		$origFileTime = date("YmdHis",filemtime($imagePath));
-		$newFileTime = date("YmdHis",filemtime($newPath));
+		$newFileTime = date("YmdHis",filemtime($path));
 		if($newFileTime < $origFileTime): # Not using $opts['expire-time'] ??
 			$isInCache = false;
 		endif;
