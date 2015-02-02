@@ -38,13 +38,13 @@ class Resizer {
         if(!file_exists($imagePath)):
             $imagePath = $_SERVER['DOCUMENT_ROOT'].$imagePath;
             if(!file_exists($imagePath)):
-                return 'image not found';
+                throw new RuntimeException();
             endif;
         endif;
 
         return $imagePath;
     }
-    
+
 
     private function download($filePath) {
         $img = $this->fileSystem->file_get_contents($this->path->sanitizedPath());
