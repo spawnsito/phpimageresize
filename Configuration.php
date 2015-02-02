@@ -8,6 +8,7 @@ class Configuration {
     const REMOTE_KEY = 'remoteFolder';
     const CACHE_MINUTES_KEY = 'cache_http_minutes';
     const WIDTH_KEY = 'width';
+    const HEIGHT_KEY = 'width';
 
     const CONVERT_PATH = 'convert';
 
