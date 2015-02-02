@@ -25,21 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="function.resize.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="function.resize.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/function.resize.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2477612" vertical-offset="1406" max-vertical-offset="2470">
-              <caret line="118" column="10" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
+            <state vertical-scroll-proportion="-10.109091" vertical-offset="1800" max-vertical-offset="2470">
+              <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResizerTest.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ResizerTest.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/ResizerTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.142857" vertical-offset="595" max-vertical-offset="1368">
-              <caret line="61" column="101" selection-start-line="61" selection-start-column="101" selection-end-line="61" selection-end-column="101" />
+            <state vertical-scroll-proportion="0.94548064" vertical-offset="576" max-vertical-offset="1349">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,9 +98,9 @@
         <option value="$PROJECT_DIR$/FileSystem.php" />
         <option value="$PROJECT_DIR$/test/ImagePathTest.php" />
         <option value="$PROJECT_DIR$/Resizer.php" />
-        <option value="$PROJECT_DIR$/test/ResizerTest.php" />
         <option value="$PROJECT_DIR$/Configuration.php" />
         <option value="$PROJECT_DIR$/function.resize.php" />
+        <option value="$PROJECT_DIR$/test/ResizerTest.php" />
       </list>
     </option>
   </component>
@@ -298,14 +298,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ResizerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.142857" vertical-offset="595" max-vertical-offset="1368">
-          <caret line="61" column="101" selection-start-line="61" selection-start-column="101" selection-end-line="61" selection-end-column="101" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Resizer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.571428" vertical-offset="475" max-vertical-offset="1501">
@@ -324,8 +316,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/function.resize.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2477612" vertical-offset="1406" max-vertical-offset="2470">
-          <caret line="118" column="10" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
+        <state vertical-scroll-proportion="-10.109091" vertical-offset="1800" max-vertical-offset="2470">
+          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ResizerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.94548064" vertical-offset="576" max-vertical-offset="1368">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding />
         </state>
       </provider>
