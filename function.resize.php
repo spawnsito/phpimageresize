@@ -58,8 +58,6 @@ function resize($imagePath,$opts=null){
 		return 'cannot resize the image';
 	}
 
-	$create = true;
-
     $create = !isInCache($newPath, $imagePath);
 
 	if($create == true):
