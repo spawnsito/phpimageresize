@@ -104,12 +104,13 @@ function resize($imagePath,$opts=null){
 		return 'cannot resize the image';
 	}
 
+	// This has to be done in resizer resize
+
 	try {
 		$imagePath = $resizer->obtainFilePath();
 	} catch (Exception $e) {
 		return 'image not found';
 	}
-
 
 
 	$newPath = composeNewPath($imagePath, $configuration);
