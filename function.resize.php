@@ -60,14 +60,7 @@ function resize($imagePath,$opts=null){
 
 	$create = true;
 
-    if(file_exists($newPath) == true):
-        $create = false;
-        $origFileTime = date("YmdHis",filemtime($imagePath));
-        $newFileTime = date("YmdHis",filemtime($newPath));
-        if($newFileTime < $origFileTime): # Not using $opts['expire-time'] ??
-            $create = true;
-        endif;
-    endif;
+    $create = !isInCache($newPath, $imagePath);
 
 	if($create == true):
 		if(!empty($w) and !empty($h)):
