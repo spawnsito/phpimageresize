@@ -132,6 +132,6 @@ function resize($imagePath,$opts=null){
 
 	$cacheFilePath = str_replace($_SERVER['DOCUMENT_ROOT'],'',$newPath);
 
-	return str_replace($_SERVER['DOCUMENT_ROOT'],'',$newPath);
+	return $cacheFilePath;
 	
 }
