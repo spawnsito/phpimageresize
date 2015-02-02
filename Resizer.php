@@ -39,6 +39,10 @@ class Resizer {
         return $imagePath;
     }
 
+    private function download() {
+        
+    }
+
     private function isInCache($filePath) {
         $fileExists = $this->fileSystem->file_exists($filePath);
         $fileValid = $this->fileNotExpired($filePath);
