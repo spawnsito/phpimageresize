@@ -22,6 +22,27 @@ function isInCache($path, $imagePath) {
 	return $isInCache;
 }
 
+function composeNewPath() {
+	$finfo = pathinfo($imagePath);
+	$ext = $finfo['extension'];
+
+	$cropSignal = isset($opts['crop']) && $opts['crop'] == true ? "_cp" : "";
+	$scaleSignal = isset($opts['scale']) && $opts['scale'] == true ? "_sc" : "";
+	$widthSignal = !empty($w) ? '_w'.$w : '';
+	$heightSignal = !empty($h) ? '_h'.$h : '';
+	$extension = '.'.$ext;
+
+	$newPath = $configuration->obtainCache() .$filename.$widthSignal.$heightSignal.$cropSignal.$scaleSignal.$extension;
+
+	if($opts['output-filename']) {
+		$newPath = $opts['output-filename'];
+	}
+
+	if(empty($opts['output-filename']) && empty($w) && empty($h)) {
+		return 'cannot resize the image';
+	}
+}
+
 function resize($imagePath,$opts=null){
 	$path = new ImagePath($imagePath);
 	$configuration = new Configuration($opts);
