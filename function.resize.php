@@ -37,7 +37,7 @@ function resize($imagePath,$opts=null){
 		$newPath = $opts['output-filename'];
 	else:
         if(!empty($w) and !empty($h)):
-            $newPath = $configuration->obtainCache() .$filename.'_w'.$w.'_h'.$h.(isset($opts['crop']) && $opts['crop'] == true ? "_cp" : "").(isset($opts['scale']) && $opts['scale'] == true ? "_sc" : "").'.'.$ext;
+            $newPath = $configuration->obtainCache() .$filename.'_w'.$w.'_h'.$h.($cropSignal).(isset($opts['scale']) && $opts['scale'] == true ? "_sc" : "").'.'.$ext;
         elseif(!empty($w)):
             $newPath = $configuration->obtainCache() .$filename.'_w'.$w.'.'.$ext;
         elseif(!empty($h)):
