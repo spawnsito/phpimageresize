@@ -19,10 +19,6 @@ function resize($imagePath,$opts=null){
 
 	$filePath = $resizer->obtainFilePath();
 
-	if($filePath != '') {
-		$imagePath = $filePath;
-	}
-
 	
 
 	if(isset($opts['w'])): $w = $opts['w']; endif;
