@@ -29,7 +29,7 @@ class Configuration {
             'quality' => 90,
             'cache_http_minutes' => 20,
             'width' => null,
-            'h' => null);
+            'height' => null);
 
         $this->opts = array_merge($defaults, $sanitized);
     }
