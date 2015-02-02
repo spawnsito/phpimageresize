@@ -123,7 +123,9 @@ function resize($imagePath,$opts=null){
     $create = !isInCache($newPath, $imagePath);
 
 	if($create == true):
-		
+		try {
+			doResize($imagePath, $newPath, $configuration);
+		}
 	endif;
 
 	# return cache file path
