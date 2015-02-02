@@ -44,15 +44,7 @@ class Resizer {
 
         return $imagePath;
     }
-
-    private function checkFileExists() {
-        if(!file_exists($imagePath)):
-            $imagePath = $_SERVER['DOCUMENT_ROOT'].$imagePath;
-            if(!file_exists($imagePath)):
-                return 'image not found';
-            endif;
-        endif;
-    }
+    
 
     private function download($filePath) {
         $img = $this->fileSystem->file_get_contents($this->path->sanitizedPath());
