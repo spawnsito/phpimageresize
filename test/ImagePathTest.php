@@ -1,5 +1,5 @@
 <?php
-require 'ImagePath.php';
+require_once 'ImagePath.php';
 
 class ImagePathTest extends PHPUnit_Framework_TestCase {
 
