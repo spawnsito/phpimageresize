@@ -8,7 +8,7 @@ function sanitize($path) {
 	return urldecode($path);
 }
 
-function isInCache() {
+function isInCache($path, $imagePath) {
 	if(file_exists($newPath) == true):
 		$create = false;
 		$origFileTime = date("YmdHis",filemtime($imagePath));
