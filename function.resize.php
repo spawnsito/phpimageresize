@@ -46,7 +46,10 @@ function composeNewPath($imagePath, $configuration) {
 
 function doResize($imagePath, $newPath, $configuration) {
 	$opts = $configuration->asHash();
-	
+	$w = $configuration->obtainWidth();
+	$h = $configuration->obtainHeight();
+
+
 	if(!empty($w) and !empty($h)):
 
 		list($width,$height) = getimagesize($imagePath);
