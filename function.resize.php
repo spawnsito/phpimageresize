@@ -44,6 +44,13 @@ function composeNewPath($imagePath, $configuration) {
 	return $newPath;
 }
 
+function defaultShellCommand() {
+	$configuration->obtainConvertPath() ." " . escapeshellarg($imagePath) .
+	" -thumbnail ". (!empty($h) ? 'x':'') . $w ."".
+	(isset($opts['maxOnly']) && $opts['maxOnly'] == true ? "\>" : "") .
+	" -quality ". escapeshellarg($opts['quality']) ." ". escapeshellarg($newPath);
+}
+
 function doResize($imagePath, $newPath, $configuration) {
 	$opts = $configuration->asHash();
 	$w = $configuration->obtainWidth();
