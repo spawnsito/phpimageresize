@@ -37,7 +37,7 @@ class Resizer {
 
         if(!$this->fileSystem->file_exists($imagePath)):
             $imagePath = $_SERVER['DOCUMENT_ROOT'].$imagePath;
-            if(!file_exists($imagePath)):
+            if(!$this->fileSystem->file_exists($imagePath)):
                 throw new RuntimeException();
             endif;
         endif;
