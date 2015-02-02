@@ -90,10 +90,7 @@ function doResize($imagePath, $newPath, $configuration) {
 		endif;
 
 	else:
-		$cmd = $configuration->obtainConvertPath() ." " . escapeshellarg($imagePath) .
-			" -thumbnail ". (!empty($h) ? 'x':'') . $w ."".
-			(isset($opts['maxOnly']) && $opts['maxOnly'] == true ? "\>" : "") .
-			" -quality ". escapeshellarg($opts['quality']) ." ". escapeshellarg($newPath);
+		$cmd = defaultShellCommand($configuration, $imagePath, $newPath);
 	endif;
 
 	$c = exec($cmd, $output, $return_code);
