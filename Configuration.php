@@ -28,7 +28,7 @@ class Configuration {
             'cache_http_minutes' => 20,
             'w' => null,
             'h' => null);
-        
+
         $this->opts = array_merge($defaults, $sanitized);
     }
 
