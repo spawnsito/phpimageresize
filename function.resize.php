@@ -69,7 +69,7 @@ function composeResizeOptions($imagePath, $configuration) {
 
 	$resize = "x".$h;
 
-	if(isPanoramic($imagePath)) && false === $opts['crop']:
+	if(isPanoramic($imagePath) && false === $opts['crop']):
 		$resize = $w;
 	endif;
 
