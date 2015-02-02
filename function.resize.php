@@ -100,7 +100,7 @@ function resize($imagePath,$opts=null){
 
 	$opts = $configuration->asHash();
 
-	if(empty($opts['output-filename']) && empty($w) && empty($h)) {
+	if(empty($configuration->asHash()['output-filename']) && empty($w) && empty($h)) {
 		return 'cannot resize the image';
 	}
 
