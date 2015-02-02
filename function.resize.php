@@ -30,6 +30,7 @@ function resize($imagePath,$opts=null){
 
 	$finfo = pathinfo($imagePath);
 	$ext = $finfo['extension'];
+	
 	if(false !== $opts['output-filename']) :
 		$newPath = $opts['output-filename'];
 	else:
