@@ -58,7 +58,8 @@ function defaultShellCommand($configuration, $imagePath, $newPath) {
 }
 
 function isPanoramic() {
-	
+	list($width,$height) = getimagesize($imagePath);
+	return $width > $height;
 }
 
 function doResize($imagePath, $newPath, $configuration) {
