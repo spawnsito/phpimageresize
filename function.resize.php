@@ -82,6 +82,8 @@ function composeResizeOptions($imagePath, $configuration) {
 	return $resize;
 }
 
+
+
 function doResize($imagePath, $newPath, $configuration) {
 	$opts = $configuration->asHash();
 	$w = $configuration->obtainWidth();
