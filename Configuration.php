@@ -46,7 +46,7 @@ class Configuration {
     }
 
     public function obtainCacheMinutes() {
-        
+        return $this->opts[];
     }
     private function sanitize($opts) {
         if($opts == null) return array();
