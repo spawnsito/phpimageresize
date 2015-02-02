@@ -45,6 +45,10 @@ function composeNewPath($imagePath, $configuration) {
 }
 
 function defaultShellCommand($configuration, $imagePath, $newPath) {
+	$opts = $configuration->asHash();
+	$w = $configuration->obtainWidth();
+	$h = $configuration->obtainHeight();
+	
 	$configuration->obtainConvertPath() ." " . escapeshellarg($imagePath) .
 	" -thumbnail ". (!empty($h) ? 'x':'') . $w ."".
 	(isset($opts['maxOnly']) && $opts['maxOnly'] == true ? "\>" : "") .
