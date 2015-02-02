@@ -32,7 +32,7 @@ function resize($imagePath,$opts=null){
 	$ext = $finfo['extension'];
 
 	$cropSignal = isset($opts['crop']) && $opts['crop'] == true ? "_cp" : "";
-	$scaleSignal = (isset($opts['scale']) && $opts['scale'] == true ? "_sc" : "";
+	$scaleSignal = isset($opts['scale']) && $opts['scale'] == true ? "_sc" : "";
 
 	if(false !== $opts['output-filename']) :
 		$newPath = $opts['output-filename'];
