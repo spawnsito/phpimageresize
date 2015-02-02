@@ -18,6 +18,8 @@ function isInCache($path, $imagePath) {
 			$isInCache = false;
 		endif;
 	endif;
+
+	return $isInCache;
 }
 
 function resize($imagePath,$opts=null){
