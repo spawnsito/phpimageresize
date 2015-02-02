@@ -92,6 +92,13 @@ function commandWithScale($imagePath, $newPath, $configuration) {
 	return $cmd;
 }
 
+function commandWithoutScale() {
+	$cmd = $configuration->obtainConvertPath() ." ". escapeshellarg($imagePath) ." -resize ". escapeshellarg($resize) .
+		" -size ". escapeshellarg($w ."x". $h) .
+		" xc:". escapeshellarg($opts['canvas-color']) .
+		" +swap -gravity center -composite -quality ". escapeshellarg($opts['quality'])." ".escapeshellarg($newPath);
+}
+
 function doResize($imagePath, $newPath, $configuration) {
 	$opts = $configuration->asHash();
 	$w = $configuration->obtainWidth();
