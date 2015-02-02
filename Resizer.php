@@ -57,6 +57,7 @@ class Resizer {
     }
 
     private function fileNotExpired($filePath) {
+        $cacheMinutes = $this->configuration->obtainCacheMinutes();
         $this->fileSystem->filemtime($filePath) < strtotime('+'.$opts['cache_http_minutes'].' minutes'
     }
 
