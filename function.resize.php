@@ -92,7 +92,7 @@ function commandWithScale($imagePath, $newPath, $configuration) {
 	return $cmd;
 }
 
-function commandWithoutScale() {
+function commandWithoutScale($imagePath, $newPath, $configuration) {
 	$cmd = $configuration->obtainConvertPath() ." ". escapeshellarg($imagePath) ." -resize ". escapeshellarg($resize) .
 		" -size ". escapeshellarg($w ."x". $h) .
 		" xc:". escapeshellarg($opts['canvas-color']) .
