@@ -101,8 +101,7 @@ function doResize($imagePath, $newPath, $configuration) {
 		$resize = composeResizeOptions($imagePath, $configuration);
 
 		if(true === $opts['scale']):
-			$cmd = $configuration->obtainConvertPath() ." ". escapeshellarg($imagePath) ." -resize ". escapeshellarg($resize) .
-				" -quality ". escapeshellarg($opts['quality']) . " " . escapeshellarg($newPath);
+			$cmd = commandWithScale($imagePath, $newPath, $configuration);
 		else:
 			$cmd = $configuration->obtainConvertPath() ." ". escapeshellarg($imagePath) ." -resize ". escapeshellarg($resize) .
 				" -size ". escapeshellarg($w ."x". $h) .
