@@ -24,9 +24,6 @@ function resize($imagePath,$opts=null){
 	} catch Exception e {
 		return 'image not found';
 	}
-	$filePath = $resizer->obtainFilePath();
-
-
 
 	if(isset($opts['w'])): $w = $opts['w']; endif;
 	if(isset($opts['h'])): $h = $opts['h']; endif;
