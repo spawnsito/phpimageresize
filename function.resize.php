@@ -44,7 +44,7 @@ function composeNewPath($imagePath, $configuration) {
 	return $newPath;
 }
 
-function defaultShellCommand() {
+function defaultShellCommand($configuration, $imagePath, $newPath) {
 	$configuration->obtainConvertPath() ." " . escapeshellarg($imagePath) .
 	" -thumbnail ". (!empty($h) ? 'x':'') . $w ."".
 	(isset($opts['maxOnly']) && $opts['maxOnly'] == true ? "\>" : "") .
