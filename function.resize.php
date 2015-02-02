@@ -117,7 +117,7 @@ function doResize($imagePath, $newPath, $configuration) {
 		if(true === $opts['scale']):
 			$cmd = commandWithScale($imagePath, $newPath, $configuration);
 		else:
-			$cmd = commandWithoutScale($imagePath, $newPath, $configuration)
+			$cmd = commandWithoutScale($imagePath, $newPath, $configuration);
 		endif;
 
 	else:
