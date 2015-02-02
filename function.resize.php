@@ -44,7 +44,7 @@ function resize($imagePath,$opts=null){
 	}
 
 	if(empty($opts['output-filename']) && empty($w) && empty($h)) {
-		return
+		return 'cannot resize the image';
 	}
 
 	if(false !== $opts['output-filename']) :
