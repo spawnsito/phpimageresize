@@ -88,18 +88,7 @@ function doResize($imagePath, $newPath, $configuration) {
 	$h = $configuration->obtainHeight();
 
 	if(!empty($w) and !empty($h)):
-		$resize = $w;
-
-		if(isPanoramic($imagePath)):
-			if(true === $opts['crop']):
-				$resize = "x".$h;
-			endif;
-		else:
-			$resize = "x".$h;
-			if(true === $opts['crop']):
-				$resize = $w;
-			endif;
-		endif;
+		$resize = composeResizeOptions($imagePath, $configuration);
 
 		if(true === $opts['scale']):
 			$cmd = $configuration->obtainConvertPath() ." ". escapeshellarg($imagePath) ." -resize ". escapeshellarg($resize) .
