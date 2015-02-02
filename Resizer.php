@@ -27,7 +27,6 @@ class Resizer {
         if($this->path->isHttpProtocol()):
             $filename = $this->path->obtainFileName();
             $local_filepath = $this->configuration->obtainRemote() .$filename;
-            $download_image = true;
             $download_image = $this->isInCache($local_filepath);
             if($download_image == true):
                 $img = $this->fileSystem->file_get_contents($imagePath);
