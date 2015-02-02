@@ -71,7 +71,6 @@ function doResize($imagePath, $newPath, $configuration) {
 		$resize = $w;
 
 		if(isPanoramic($imagePath)):
-			$resize = $w;
 			if(true === $opts['crop']):
 				$resize = "x".$h;
 			endif;
