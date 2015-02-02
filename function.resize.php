@@ -43,7 +43,7 @@ function resize($imagePath,$opts=null){
 		$newPath = $opts['output-filename'];
 	}
 
-	if(empty($opts['output-filename']))
+	if(empty($opts['output-filename']) && empty($w))
 
 	if(false !== $opts['output-filename']) :
 		$newPath = $opts['output-filename'];
