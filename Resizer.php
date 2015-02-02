@@ -45,7 +45,13 @@ class Resizer {
     }
 
     private function isInCache() {
-        
+        $download_image = false;
+        if($this->fileSystem->file_exists($local_filepath)):
+            $opts = $this->configuration->asHash();
+            if($this->fileSystem->filemtime($local_filepath) < strtotime('+'.$opts['cache_http_minutes'].' minutes')):
+                $download_image = false;
+            endif;
+        endif;
     }
 
     private function checkPath($path) {
