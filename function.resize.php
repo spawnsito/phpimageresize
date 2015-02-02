@@ -28,6 +28,7 @@ function resize($imagePath,$opts=null){
 	if(isset($opts['h'])): $h = $opts['h']; endif;
 
 	$w = $configuration->obtainWidth();
+	$h = $configuration->obtainHeight();
 
 	$filename = md5_file($imagePath);
 
