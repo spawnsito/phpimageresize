@@ -47,9 +47,8 @@ class Resizer {
     private function isInCache($filePath) {
         $fileExists = $this->fileSystem->file_exists($filePath);
         $fileValid = $this->fileNotExpired($filePath);
-        $inCache = $fileExists && $fileValid;
 
-        return $inCache;
+        return $fileExists && $fileValid;
     }
 
     private function fileNotExpired($filePath) {
