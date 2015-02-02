@@ -25,7 +25,11 @@ class Configuration {
             self::CACHE_KEY => self::CACHE_PATH,
             self::REMOTE_KEY => self::REMOTE_PATH,
             'quality' => 90,
-            'cache_http_minutes' => 20);
+            'cache_http_minutes' => 20,
+            'w' => null,
+            'h' => null);
+
+
 
         $this->opts = array_merge($defaults, $sanitized);
     }
