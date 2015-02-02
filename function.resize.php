@@ -99,8 +99,6 @@ function resize($imagePath,$opts=null){
 	$resizer = new Resizer($path, $configuration);
 
 	$opts = $configuration->asHash();
-	$w = $configuration->obtainWidth();
-	$h = $configuration->obtainHeight();
 
 	if(empty($opts['output-filename']) && empty($w) && empty($h)) {
 		return 'cannot resize the image';
@@ -111,6 +109,8 @@ function resize($imagePath,$opts=null){
 	} catch (Exception $e) {
 		return 'image not found';
 	}
+
+
 
 	$newPath = composeNewPath($imagePath, $configuration);
 
