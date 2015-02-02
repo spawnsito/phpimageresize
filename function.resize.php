@@ -9,9 +9,9 @@ function sanitize($path) {
 }
 
 function isInCache($path, $imagePath) {
-	$create = false;
+	$isInCache = false;
 	if(file_exists($path) == true):
-		$create = false;
+
 		$origFileTime = date("YmdHis",filemtime($imagePath));
 		$newFileTime = date("YmdHis",filemtime($newPath));
 		if($newFileTime < $origFileTime): # Not using $opts['expire-time'] ??
