@@ -112,6 +112,7 @@ function doResize($imagePath, $newPath, $configuration) {
 	$h = $configuration->obtainHeight();
 
 	if(!empty($w) and !empty($h)):
+		$cmd = commandWithCrop($imagePath, $newPath, $configuration);
 		if(true === $opts['scale']):
 			$cmd = commandWithScale($imagePath, $newPath, $configuration);
 		else:
