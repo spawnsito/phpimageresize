@@ -8,6 +8,17 @@ function sanitize($path) {
 	return urldecode($path);
 }
 
+function isInCache() {
+	if(file_exists($newPath) == true):
+		$create = false;
+		$origFileTime = date("YmdHis",filemtime($imagePath));
+		$newFileTime = date("YmdHis",filemtime($newPath));
+		if($newFileTime < $origFileTime): # Not using $opts['expire-time'] ??
+			$create = true;
+		endif;
+	endif;
+}
+
 function resize($imagePath,$opts=null){
 	$path = new ImagePath($imagePath);
 	$configuration = new Configuration($opts);
