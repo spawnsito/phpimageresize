@@ -6,6 +6,7 @@ class Configuration {
 
     const CACHE_KEY = 'cacheFolder';
     const REMOTE_KEY = 'remoteFolder';
+    const CACHE_MINUTES_KEY = 'cache_http_minutes';
 
     const CONVERT_PATH = 'convert';
 
