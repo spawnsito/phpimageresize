@@ -34,6 +34,7 @@ function resize($imagePath,$opts=null){
 	$cropSignal = isset($opts['crop']) && $opts['crop'] == true ? "_cp" : "";
 	$scaleSignal = isset($opts['scale']) && $opts['scale'] == true ? "_sc" : "";
 	$widthSignal = !empty($w) ? '_w'.$w : '';
+	$heightSignal = !empty($h) ? '_h'.$h : '';
 
 	if(false !== $opts['output-filename']) :
 		$newPath = $opts['output-filename'];
