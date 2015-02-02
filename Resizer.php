@@ -44,6 +44,10 @@ class Resizer {
         return $imagePath;
     }
 
+    private function isInCache() {
+        
+    }
+
     private function checkPath($path) {
         if (!($path instanceof ImagePath)) throw new InvalidArgumentException();
     }
