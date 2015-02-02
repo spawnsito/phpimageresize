@@ -119,6 +119,7 @@ function resize($imagePath,$opts=null){
 
 	if($create == true):
 		try {
+			
 			doResize($imagePath, $newPath, $configuration);
 		} catch (Exception $e) {
 			return 'cannot resize the image';
