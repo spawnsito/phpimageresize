@@ -53,6 +53,8 @@ function defaultShellCommand($configuration, $imagePath, $newPath) {
 	" -thumbnail ". (!empty($h) ? 'x':'') . $w ."".
 	(isset($opts['maxOnly']) && $opts['maxOnly'] == true ? "\>" : "") .
 	" -quality ". escapeshellarg($opts['quality']) ." ". escapeshellarg($newPath);
+
+	return $command;
 }
 
 function doResize($imagePath, $newPath, $configuration) {
