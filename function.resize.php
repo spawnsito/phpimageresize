@@ -114,10 +114,6 @@ function resize($imagePath,$opts=null){
 
 	$newPath = composeNewPath($imagePath, $configuration);
 
-	if(empty($opts['output-filename']) && empty($w) && empty($h)) {
-		return 'cannot resize the image';
-	}
-
     $create = !isInCache($newPath, $imagePath);
 
 	if($create == true):
